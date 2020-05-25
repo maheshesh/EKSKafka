@@ -15,10 +15,10 @@ Quikstart to create a simple kafka setup
 
 # Points to note on Kafka setup
 - Zookeeper also needs to be packaged along with kafka as a seperate PoD 
-- Anti Affinity is expected to be setup to ensure ZooKeeper and Kafka are spread across and dont end up in the same node
-- Stateful set and Persistence through volumes also needs to setup to ensures the state of Kafka is preserved in a persistent 
-database for situations when pod is destroyed and and has to be rebuilt by EKS
-- The liveness (To check if container is running and needs a restart) & readiness (redy to recieve requests) aspect of the Pods needs to be considered as well
+- Anti Affinity is expected to be setup to ensure ZooKeeper and Kafka are spread across and don't end up together
+- Stateful set and Persistant volumes also needs to be setup, this ensures the state of Kafka is preserved in a  
+database (to preserve the state if a pod is destroyed and EKS has to rebuild the PoD)
+- The liveness (To check if container is running and needs a restart) & readiness (ready to recieve requests) aspects of the Pods needs to be considered
 
 # Alternative solution
 - Strinzi is https://strimzi.io/documentation/ is one more open source solution to get Kafka installed on Kubernetes 
