@@ -3,8 +3,8 @@
 - Thank you Yolean for the detailed instructions and sample code. This has a good reference on how to build a Kafka cluster 
 
 # Repo Structure
-- BuildEKSStructure builds an EKS cluster in AWS through a Jenkins job (Refer the Readme.md in the BuildEKS folder)
-- DeployKafkaToEKS deploys the Kafka on EKS
+- BuildEKSStructure builds an EKS cluster in AWS through a Jenkins job (Refer the Readme.md in the BuildEKS folder). Run the Jenkins Job to create an EKS cluster
+- DeployKafkaToEKS deploys the Kafka on EKS. Run the Jenkins Job in this folder to deploy Kafka
 
 
 # Kafka on EKS
