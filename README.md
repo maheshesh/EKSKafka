@@ -11,7 +11,7 @@
 Quikstart to create a simple kafka setup 
 - kubectl create namespace kafka && \
 - cd /DeployKafkaEKS/variants/dev-small
-- kubectl apply -k /DeployKafkaEKS/variants/dev-small/variants/dev-small/?ref=v6.0.3
+- kubectl apply -k 
 
 # Points to note on Kafka setup
 - Zookeeper also needs to be packaged along with kafka as a seperate PoD 
