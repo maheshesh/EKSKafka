@@ -1,7 +1,6 @@
 # A Jenkins job is setup with two stages
 1) To deploy the Kafka on EKS
-2) TO test the deployed Kafka pods. Please note that this stage is not done but the idea is you pass a bunch of messgaes 
-to the broker and ensure that the messages can be consumed successfully
+2) TO test the deployed Kafka pods. Please note that this stage is not completed, but the idea is for you to pass a bunch of messgaes to the broker and assert that the messages have be consumed successfully
 
 cd DeployKafkaEKS/variants/dev-small
 kubectl apply -k
