@@ -3,14 +3,15 @@
 - Thank you Yolean for the detailed instructions and sample code. This has a good reference on how to build a Kafka cluster 
 
 # Repo Structure
-- BuildEKSStructure builds an EKS cluster in AWS through a Jenkins job
+- BuildEKSStructure builds an EKS cluster in AWS through a Jenkins job (Refer the Readme.md in the BuildEKS folder)
 - DeployKafkaToEKS deploys the Kafka on EKS
 
 
 # Kafka on EKS
-Quikstart to create a simple kafka setup has been used
+Quikstart to create a simple kafka setup 
 - kubectl create namespace kafka && \
-- kubectl apply -k github.com/Yolean/kubernetes-kafka/variants/dev-small/?ref=v6.0.3
+- cd /DeployKafkaEKS/variants/dev-small
+- kubectl apply -k /DeployKafkaEKS/variants/dev-small/variants/dev-small/?ref=v6.0.3
 
 # Points to note on Kafka setup
 - Zookeeper also needs to be packaged along with kafka as a seperate PoD 
