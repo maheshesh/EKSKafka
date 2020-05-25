@@ -1,0 +1,23 @@
+pipeline {
+	agent any
+	stages {
+		stage(' DeployKafka to the EKS') {
+			steps {
+				withAWS(region:'us-west-2', credentials:'mahajenkinsA') {
+					sh '''
+                                          kubectl config use-context arn:aws:eks:us-west-2:360735975530:cluster/KafkaCluster
+                                          kubectl create namespace kafka && \
+                                          cd /variants/dev/
+                                          kubectl apply -k .
+                                         '''
+					}
+				} 
+			}
+		stage(' Test the Kafka Broker ') {
+			// Testing script to be called here
+
+                }
+          }
+} 
+
+
