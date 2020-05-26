@@ -21,4 +21,4 @@ database (to preserve the state if a pod is destroyed and EKS has to rebuild the
 - The liveness (To check if container is running and needs a restart) & readiness (ready to recieve requests) aspects of the Pods needs to be considered
 
 # Alternative solution
-- Strinzi is https://strimzi.io/documentation/ is one more open source solution to get Kafka installed on Kubernetes 
+- Strinzi: https://strimzi.io/documentation/ is one more open source solution to get Kafka installed on Kubernetes 
