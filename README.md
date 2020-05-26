@@ -16,7 +16,7 @@ Quikstart to create a simple kafka setup
 # Points to note on Kafka setup
 - Zookeeper also needs to be packaged along with kafka as a seperate PoD 
 - Anti Affinity is expected to be setup to ensure ZooKeeper and Kafka are spread across and don't end up together
-- Stateful set and Persistant volumes also needs to be setup, this ensures the state of Kafka is preserved in a  
+- Stateful set and Persistant volumes also needs to be setup, this ensures the state of Kafka broker is preserved in a  
 database (to preserve the state if a pod is destroyed and EKS has to rebuild the PoD)
 - The liveness (To check if container is running and needs a restart) & readiness (ready to recieve requests) aspects of the Pods needs to be considered
 
